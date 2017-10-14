@@ -114,16 +114,9 @@
 			cube.castShadow = true;
 			cube.receiveShadow = true;
 
-<<<<<<< HEAD
       cube.position.y = -6;
       cube.rotation.x = Math.PI / 5;
       cube.rotation.y = Math.PI / 5;
-=======
-      cube.position.y = 10;
-cube.position.z = 10;
-cube.position.x = 10;
-
->>>>>>> 794da1e62b1089b65088be66824b9447f79c95f5
       scene.add(cube);
 
       // dick box
@@ -131,13 +124,13 @@ cube.position.x = 10;
       var material = new THREE.MeshBasicMaterial({
         color: 0x009ddf
       });
-      var cube = new THREE.Mesh(geometry, material);
-			cube.castShadow = true;
-			cube.receiveShadow = true;
+      var cube2 = new THREE.Mesh(geometry, material);
+			cube2.castShadow = true;
+			cube2.receiveShadow = true;
 
-      cube.position.x = 20;
+      cube2.position.x = 20;
 
-      scene.add(cube);
+      scene.add(cube2);
 
       window.addEventListener('resize', resize, false);
       setTimeout(resize, 1);
