@@ -106,17 +106,16 @@
 
 
       // basic box
-      var geometry = new THREE.BoxGeometry(3, 3, 3);
+      var geometry = new THREE.BoxGeometry(3, 10, 3);
       var material = new THREE.MeshBasicMaterial({
         color: 0x009ddf
       });
       var cube = new THREE.Mesh(geometry, material);
 			cube.castShadow = true;
 			cube.receiveShadow = true;
-      
-      cube.position.z = -6;
-      cube.rotation.x = Math.PI / 5;
-      cube.rotation.y = Math.PI / 5;
+
+      cube.position.y = 10;
+
       scene.add(cube);
 
 
